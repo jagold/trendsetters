@@ -1,0 +1,10 @@
+# this is for Heroku and other servers.
+# Locally, you should install requirements_base.txt
+-r requirements_base.txt
+otree<5
+psycopg2>=2.8,<2.9
+numpy>=1.16.2
+scipy>=1.1.0
+pandas
+django
+otreeutils
