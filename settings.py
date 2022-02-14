@@ -24,14 +24,14 @@ SESSION_CONFIGS = [
         name='circle',
         display_name="Circle",
         num_demo_participants=4,
-        app_sequence=['circle_block1','circle_understanding_b2','circle_block2','circle_understanding_b3','circle_block3','circle_understanding_b4','circle_block4','circle_understanding_b5','circle_block5'
+        app_sequence=['survey','circle_understanding_b1','circle_block1','circle_understanding_b2','circle_block2','circle_understanding_b3','circle_block3','circle_understanding_b4','circle_block4','circle_understanding_b5','circle_block5'
                       ],
     ),
     dict(
         name='complete',
         display_name="Complete",
         num_demo_participants=4,
-        app_sequence=['complete_block1','complete_understanding_b2','complete_block2','complete_understanding_b3','complete_block3','complete_understanding_b4','complete_block4','complete_understanding_b5','complete_block5'
+        app_sequence=['survey','complete_understanding_b1','complete_block1','complete_understanding_b2','complete_block2','complete_understanding_b3','complete_block3','complete_understanding_b4','complete_block4','complete_understanding_b5','complete_block5'
                       ],
     ),
 ]
