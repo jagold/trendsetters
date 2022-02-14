@@ -6,6 +6,9 @@ import random
 
 from otreeutils.pages import AllGroupsWaitPage, ExtendedPage, UnderstandingQuestionsPage, APPS_DEBUG
 
+colors = ['Purple','Green','Yellow','Unknown']
+players = ['Q', 'R', 'T', 'S', 'Unknown']
+
 class MyWaitPage(WaitPage):
     group_by_arrival_time = True
     body_text = "Sorting you into a group."
@@ -21,9 +24,6 @@ class Q(UnderstandingQuestionsPage):
     set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
-    player_number = 0
-    players = ['Q', 'R', 'T', 'S', 'Unknown']
-    colors = ['Purple','Green','Yellow','Unknown']
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
@@ -34,7 +34,7 @@ class Q(UnderstandingQuestionsPage):
         {
             'question': 'Which player are you?',
             'options': random.sample(players, 5),
-            'correct': players[player_number],
+            'correct': players[0],
             'hint': 'Please see diagram above and instructions below.'
         },
         {
@@ -77,9 +77,6 @@ class R(UnderstandingQuestionsPage):
     set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
-    player_number = 1
-    players = ['Q', 'R', 'T', 'S', 'Unknown']
-    colors = ['Purple','Green','Yellow','Unknown']
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
@@ -90,7 +87,7 @@ class R(UnderstandingQuestionsPage):
         {
             'question': 'Which player are you?',
             'options': random.sample(players, 5),
-            'correct': players[player_number],
+            'correct': players[1],
             'hint': 'Please see diagram above and instructions below.'
         },
         {
@@ -134,9 +131,6 @@ class T(UnderstandingQuestionsPage):
     set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
-    player_number = 2
-    players = ['Q', 'R', 'T', 'S', 'Unknown']
-    colors = ['Purple','Green','Yellow','Unknown']
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
@@ -147,7 +141,7 @@ class T(UnderstandingQuestionsPage):
         {
             'question': 'Which player are you?',
             'options': random.sample(players, 5),
-            'correct': players[player_number],
+            'correct': players[2],
             'hint': 'Please see diagram above and instructions below.'
         },
         {
@@ -191,9 +185,6 @@ class S(UnderstandingQuestionsPage):
     set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
-    player_number = 3
-    players = ['Q', 'R', 'T', 'S', 'Unknown']
-    colors = ['Purple','Green','Yellow','Unknown']
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
@@ -204,7 +195,7 @@ class S(UnderstandingQuestionsPage):
         {
             'question': 'Which player are you?',
             'options': random.sample(players, 5),
-            'correct': players[player_number],
+            'correct': players[3],
             'hint': 'Please see diagram above and instructions below.'
         },
         {

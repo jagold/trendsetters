@@ -7,7 +7,7 @@ from .models import Constants
 
 class Consent_form(Page):
     form_model = 'player'
-    form_fields = ['accept']
+    form_fields = ['signature']
 
 class Payment_info(Page):
     form_model = 'player'

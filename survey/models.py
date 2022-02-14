@@ -36,6 +36,8 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 
+    signature = models.StringField(label="Type your full name below")
+
     firstname = models.StringField(label="First name")
 
     lastname = models.StringField(label="Last name")
@@ -61,6 +63,8 @@ class Player(BasePlayer):
     def error_message(self, values):
         print('values is', values)
         return 'A response has indicated that you are not paying attention. Please revisit the questions below.'
+
+    age = models.DecimalField(label='Age', min=18, max_digits=3, decimal_places=0)
 
     gender = models.StringField(
         choices=[['Male', 'Male'], ['Female', 'Female'],
