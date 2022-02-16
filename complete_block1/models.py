@@ -38,10 +38,10 @@ class Constants(BaseConstants):
     fourpurple_payoff = c(0)
 
     # payoffs if player picks yellow
-    oneyellow_payoff = c(3)
-    twoyellow_payoff = c(6)
-    threeyellow_payoff = c(9)
-    fouryellow_payoff = c(12)
+    oneyellow_payoff = c(1)
+    twoyellow_payoff = c(2)
+    threeyellow_payoff = c(3)
+    fouryellow_payoff = c(4)
 
 
 class Subsession(BaseSubsession):

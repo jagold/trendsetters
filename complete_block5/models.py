@@ -26,22 +26,22 @@ class Constants(BaseConstants):
     instructions_new_template = 'complete_block5/instructions_new.html'
 
     # payoffs if player picks green""",
-    onegreen_payoff = c(7)
-    twogreen_payoff = c(14)
-    threegreen_payoff = c(21)
-    fourgreen_payoff = c(28)
+    onegreen_payoff = c(3)
+    twogreen_payoff = c(6)
+    threegreen_payoff = c(9)
+    fourgreen_payoff = c(12)
 
     # payoffs if player picks purple
-    onepurple_payoff = c(5)
-    twopurple_payoff = c(10)
-    threepurple_payoff = c(15)
-    fourpurple_payoff = c(20)
+    onepurple_payoff = c(2)
+    twopurple_payoff = c(4)
+    threepurple_payoff = c(6)
+    fourpurple_payoff = c(8)
 
     # payoffs if player picks yellow
-    oneyellow_payoff = c(3)
-    twoyellow_payoff = c(6)
-    threeyellow_payoff = c(9)
-    fouryellow_payoff = c(12)
+    oneyellow_payoff = c(1)
+    twoyellow_payoff = c(2)
+    threeyellow_payoff = c(3)
+    fouryellow_payoff = c(4)
 
 
 class Subsession(BaseSubsession):
