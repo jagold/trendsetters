@@ -86,7 +86,7 @@ class Player(BasePlayer):
     def set_payoff(self):
         greenval = 0
         purpleval = 0
-        yellowval = 3
+        yellowval = 1
         todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
                 'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
                 'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
