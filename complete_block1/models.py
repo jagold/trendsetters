@@ -96,6 +96,21 @@ class Player(BasePlayer):
         self.payoff = choicecolumn[[self.other_player1().decision,
                                     self.other_player2().decision,
                                     self.other_player3().decision].count(self.decision)]
+   
+    def get_payoff(self):
+        greenval = 0
+        purpleval = 0
+        yellowval = 1
+        todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
+                'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
+                'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
+        payoff_matrix = pd.DataFrame(todf)
+
+        choicecolumn = payoff_matrix[self.decision]
+        self.payoff = choicecolumn[[self.other_player1().decision,
+                                    self.other_player2().decision,
+                                    self.other_player3().decision].count(self.decision)]
+        return self.payoff
 
 
 

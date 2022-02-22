@@ -15,7 +15,9 @@ class ResultsWaitPage(WaitPage):
 
 
 class Results(Page):
-    pass
+    def app_after_this_page(self, upcoming_apps):
+        if self.subsession.vars_for_admin_report() == {'decisionlist': ['Green','Green','Green','Green']}:
+            return "end"
 
 
 page_sequence = [Decision, ResultsWaitPage, Results]

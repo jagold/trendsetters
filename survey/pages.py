@@ -26,4 +26,4 @@ class Autonomy_2(Page):
     form_model = 'player'
     form_fields = ['autgen_2_1', 'autgen_2_2', 'autgen_2_3', 'autgen_2_4', 'autgen_2_5', 'autgen_2_6', 'autgen_2_7', 'autgen_2_8', 'autgen_2_9']
 
-page_sequence = [Consent_form, Payment_info, Demographics, Autonomy_1, Autonomy_2]
+page_sequence = [Consent_form, Payment_info, Demographics]

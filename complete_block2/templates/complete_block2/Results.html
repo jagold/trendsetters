@@ -2,12 +2,12 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Results - Block 2, Round {{ player.round_number }}
 {% endblock %}
 
 {% block content %}
   
-    <p style="color:red">Maximum payoff: 28</p>
+    <p style="color:red">Maximum payoff: $12</p>
 
     <table class="table-condensed" style="width:500px; margin-top:20px;">
         <tr><td>Your choice:</td><td>{{ player.decision }}</td></tr>

@@ -2,12 +2,12 @@
 {% load otree %}
 
 {% block title %}
-    Decision
+    Decision - Block 3, Round {{ player.round_number }}
 {% endblock %}
 
 {% block content %}
 
-    <p style="color:red">Maximum payoff: 28</p>
+    <p style="color:red">Maximum payoff: $12</p>
 
     {% formfield player.decision label="What color do you choose?" %}
 

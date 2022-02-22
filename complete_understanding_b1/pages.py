@@ -80,8 +80,8 @@ class R(UnderstandingQuestionsPage):
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
-            'options': random.sample([20, 12, 6, 28, 'Unknown'], 5),
-            'correct': 12,
+            'options': random.sample(['$2', '$12', '$4', '$1', 'Unknown'], 5),
+            'correct': '$4',
             'hint': 'Please review instructions below.'
         },
         {
@@ -134,8 +134,8 @@ class T(UnderstandingQuestionsPage):
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
-            'options': random.sample([20, 12, 6, 28, 'Unknown'], 5),
-            'correct': 12,
+            'options': random.sample(['$2', '$12', '$4', '$1', 'Unknown'], 5),
+            'correct': '$4',
             'hint': 'Please review instructions below.'
         },
         {
@@ -188,8 +188,8 @@ class S(UnderstandingQuestionsPage):
     questions = [
         {
             'question': 'What is your maximum payoff in each round?',
-            'options': random.sample([20, 12, 6, 28, 'Unknown'], 5),
-            'correct': 12,
+            'options': random.sample(['$2', '$12', '$4', '$1', 'Unknown'], 5),
+            'correct': '$4',
             'hint': 'Please review instructions below.'
         },
         {
