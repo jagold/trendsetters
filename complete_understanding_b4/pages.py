@@ -17,8 +17,8 @@ class Q(UnderstandingQuestionsPage):
     questions = [
         {
             'question': 'For this block, what is the maximum payoff in any round?',
-            'options': ['$20', '$12', '$8', '$4'],
-            'correct': '$12',
+            'options': ['28 points', '20 points', '12 points', '4 points', 'Unknown'],
+            'correct': '28 points',
             'hint': 'Please review instructions below.'
         },
     ]

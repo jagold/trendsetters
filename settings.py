@@ -31,7 +31,7 @@ SESSION_CONFIGS = [
         name='complete',
         display_name="Complete",
         num_demo_participants=4,
-        app_sequence=['survey','complete_understanding_b1','complete_block1','complete_understanding_b2','complete_block2','complete_understanding_b3','complete_block3','complete_understanding_b4','complete_block4','complete_understanding_b5','complete_block5','end'
+        app_sequence=['survey','complete_understanding_b1','complete_block1','complete_understanding_b2','complete_block2','complete_understanding_b3','complete_block3','complete_understanding_b4','complete_block4','complete_understanding_b5','complete_block5','complete_understanding_b6','complete_block6','end'
                       ],
     ),
 ]
@@ -42,7 +42,7 @@ LANGUAGE_CODE = 'en'
 
 # e.g. EUR, GBP, CNY, JPY
 REAL_WORLD_CURRENCY_CODE = 'USD'
-USE_POINTS = False
+USE_POINTS = True
 
 ROOMS = [
     dict(
