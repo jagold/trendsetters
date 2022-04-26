@@ -34,6 +34,13 @@ SESSION_CONFIGS = [
         app_sequence=['survey','complete_understanding_b1','complete_block1','complete_understanding_b2','complete_block2','complete_understanding_b3','complete_block3','complete_understanding_b4','complete_block4','complete_understanding_b5','complete_block5','complete_understanding_b6','complete_block6','end'
                       ],
     ),
+    dict(
+        name='line',
+        display_name="Line",
+        num_demo_participants=4,
+        app_sequence=['line_understanding_b1'
+                      ],
+    ),
 ]
 
 # ISO-639 code

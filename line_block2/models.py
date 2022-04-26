@@ -26,16 +26,16 @@ class Constants(BaseConstants):
     instructions_new_template = 'line_block2/instructions_new.html'
 
     # payoffs if player picks green""",
-    onegreen_payoff = c(7)
-    twogreen_payoff = c(14)
-    threegreen_payoff = c(21)
-    fourgreen_payoff = c(28)
+    onegreen_payoff = c(0)
+    twogreen_payoff = c(0)
+    threegreen_payoff = c(0)
+    fourgreen_payoff = c(0)
 
     # payoffs if player picks purple
-    onepurple_payoff = c(5)
-    twopurple_payoff = c(10)
-    threepurple_payoff = c(15)
-    fourpurple_payoff = c(20)
+    onepurple_payoff = c(0)
+    twopurple_payoff = c(0)
+    threepurple_payoff = c(0)
+    fourpurple_payoff = c(0)
 
     # payoffs if player picks yellow
     oneyellow_payoff = c(3)
@@ -84,8 +84,8 @@ class Player(BasePlayer):
         return self.get_others_in_group()[2]
 
     def set_payoff(self):
-        greenval = 7
-        purpleval = 5
+        greenval = 0
+        purpleval = 0
         yellowval = 3
         todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
                 'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
@@ -96,6 +96,21 @@ class Player(BasePlayer):
         self.payoff = choicecolumn[[self.other_player1().decision,
                                     self.other_player2().decision,
                                     self.other_player3().decision].count(self.decision)]
+   
+    def get_payoff(self):
+        greenval = 0
+        purpleval = 0
+        yellowval = 3
+        todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
+                'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
+                'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
+        payoff_matrix = pd.DataFrame(todf)
+
+        choicecolumn = payoff_matrix[self.decision]
+        self.payoff = choicecolumn[[self.other_player1().decision,
+                                    self.other_player2().decision,
+                                    self.other_player3().decision].count(self.decision)]
+        return self.payoff
 
 
 
