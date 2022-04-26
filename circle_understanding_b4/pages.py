@@ -16,9 +16,9 @@ class Q(UnderstandingQuestionsPage):
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
     questions = [
         {
-            'question': 'For this block, what is the maximum payoff per round?',
-            'options': [20, 12, 8, 28],
-            'correct': 28,
+            'question': 'For this block, what is the maximum payoff in any round?',
+            'options': ['28 points', '20 points', '12 points', '4 points', 'Unknown'],
+            'correct': '28 points',
             'hint': 'Please review instructions below.'
         },
     ]

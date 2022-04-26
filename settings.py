@@ -24,7 +24,7 @@ SESSION_CONFIGS = [
         name='circle',
         display_name="Circle",
         num_demo_participants=4,
-        app_sequence=['survey','circle_understanding_b1','circle_block1','circle_understanding_b2','circle_block2','circle_understanding_b3','circle_block3','circle_understanding_b4','circle_block4','circle_understanding_b5','circle_block5'
+        app_sequence=['survey','circle_understanding_b1','circle_block1','circle_understanding_b2','circle_block2','circle_understanding_b3','circle_block3','circle_understanding_b4','circle_block4','circle_understanding_b5','circle_block5','circle_understanding_b6','circle_block6','end'
                       ],
     ),
     dict(

@@ -38,10 +38,10 @@ class Constants(BaseConstants):
     fourpurple_payoff = c(0)
 
     # payoffs if player picks yellow
-    oneyellow_payoff = c(1)
-    twoyellow_payoff = c(2)
-    threeyellow_payoff = c(3)
-    fouryellow_payoff = c(4)
+    oneyellow_payoff = c(3)
+    twoyellow_payoff = c(6)
+    threeyellow_payoff = c(9)
+    fouryellow_payoff = c(12)
 
 
 class Subsession(BaseSubsession):
@@ -86,7 +86,7 @@ class Player(BasePlayer):
     def set_payoff(self):
         greenval = 0
         purpleval = 0
-        yellowval = 1
+        yellowval = 3
         todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
                 'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
                 'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
@@ -96,6 +96,21 @@ class Player(BasePlayer):
         self.payoff = choicecolumn[[self.other_player1().decision,
                                     self.other_player2().decision,
                                     self.other_player3().decision].count(self.decision)]
+   
+    def get_payoff(self):
+        greenval = 0
+        purpleval = 0
+        yellowval = 3
+        todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
+                'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
+                'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
+        payoff_matrix = pd.DataFrame(todf)
+
+        choicecolumn = payoff_matrix[self.decision]
+        self.payoff = choicecolumn[[self.other_player1().decision,
+                                    self.other_player2().decision,
+                                    self.other_player3().decision].count(self.decision)]
+        return self.payoff
 
 
 

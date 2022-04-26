@@ -26,22 +26,22 @@ class Constants(BaseConstants):
     instructions_new_template = 'circle_block4/instructions_new.html'
 
     # payoffs if player picks green""",
-    onegreen_payoff = c(3)
-    twogreen_payoff = c(6)
-    threegreen_payoff = c(9)
-    fourgreen_payoff = c(12)
+    onegreen_payoff = c(7)
+    twogreen_payoff = c(14)
+    threegreen_payoff = c(21)
+    fourgreen_payoff = c(28)
 
     # payoffs if player picks purple
-    onepurple_payoff = c(2)
-    twopurple_payoff = c(4)
-    threepurple_payoff = c(6)
-    fourpurple_payoff = c(8)
+    onepurple_payoff = c(5)
+    twopurple_payoff = c(10)
+    threepurple_payoff = c(15)
+    fourpurple_payoff = c(20)
 
     # payoffs if player picks yellow
-    oneyellow_payoff = c(1)
-    twoyellow_payoff = c(2)
-    threeyellow_payoff = c(3)
-    fouryellow_payoff = c(4)
+    oneyellow_payoff = c(3)
+    twoyellow_payoff = c(6)
+    threeyellow_payoff = c(9)
+    fouryellow_payoff = c(12)
 
 
 class Subsession(BaseSubsession):
@@ -84,9 +84,9 @@ class Player(BasePlayer):
         return self.get_others_in_group()[2]
 
     def set_payoff(self):
-        greenval = 3
-        purpleval = 2
-        yellowval = 1
+        greenval = 7
+        purpleval = 5
+        yellowval = 3
         todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
                 'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
                 'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
