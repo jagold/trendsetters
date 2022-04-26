@@ -38,7 +38,7 @@ SESSION_CONFIGS = [
         name='line',
         display_name="Line",
         num_demo_participants=4,
-        app_sequence=['line_understanding_b1'
+        app_sequence=['survey','line_understanding_b1','line_block1','line_understanding_b2','line_block2','line_understanding_b3','line_block3','line_understanding_b4','line_block4','line_understanding_b5','line_block5','line_understanding_b6','line_block6','end'
                       ],
     ),
 ]
