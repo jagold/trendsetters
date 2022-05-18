@@ -41,6 +41,13 @@ SESSION_CONFIGS = [
         app_sequence=['survey','line_understanding_b1','line_block1','line_understanding_b2','line_block2','line_understanding_b3','line_block3','line_understanding_b4','line_block4','line_understanding_b5','line_block5','line_understanding_b6','line_block6','end'
                       ],
     ),
+    dict(
+        name='star',
+        display_name="Star",
+        num_demo_participants=4,
+        app_sequence=['survey','star_understanding_b1','star_block1','star_understanding_b2','star_block2','star_understanding_b3','star_block3','star_understanding_b4','star_block4','star_understanding_b5','star_block5','star_understanding_b6','star_block6','end'
+                      ],
+    ),
 ]
 
 # ISO-639 code

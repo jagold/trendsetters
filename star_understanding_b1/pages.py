@@ -64,13 +64,13 @@ class Q(UnderstandingQuestionsPage):
         {
             'question': 'Which color did Player R choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Green',
+            'correct': 'Unknown',
             'hint': 'Please review instructions below.'
         },
         {
             'question': 'Which color did Player S choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Unknown',
+            'correct': 'Yellow',
             'hint': 'Please review instructions below.'
         },
         {
@@ -123,7 +123,7 @@ class R(UnderstandingQuestionsPage):
         {
             'question': 'Which color did Player Q choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Green',
+            'correct': 'Unknown',
             'hint': 'Please see diagram above and instructions below.'
         },
         {
@@ -135,13 +135,13 @@ class R(UnderstandingQuestionsPage):
         {
             'question': 'Which color did Player S choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Unknown',
+            'correct': 'Yellow',
             'hint': 'Please review instructions below.'
         },
         {
             'question': 'Which color did Player T choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Yellow',
+            'correct': 'Unknown',
             'hint': 'Please review instructions below.'
         },
     ]
@@ -195,7 +195,7 @@ class T(UnderstandingQuestionsPage):
         {
             'question': 'Which color did Player R choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Green',
+            'correct': 'Unknown',
             'hint': 'Please review instructions below.'
         },
         {
@@ -255,13 +255,13 @@ class S(UnderstandingQuestionsPage):
         {
             'question': 'Which color did Player Q choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Unknown',
+            'correct': 'Yellow',
             'hint': 'Please see diagram above and instructions below.'
         },
         {
             'question': 'Which color did Player R choose?',
             'options': random.sample(colors, 4),
-            'correct': 'Unknown',
+            'correct': 'Purple',
             'hint': 'Please review instructions below.'
         },
         {
