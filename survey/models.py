@@ -48,7 +48,7 @@ class Player(BasePlayer):
 
     state = models.StringField(label='State')
 
-    zip = models.DecimalField(label='ZIP Code', min=1000, max_digits=5, decimal_places=0)
+    zip = models.FloatField(label='ZIP Code', min=1000, max_digits=5, decimal_places=0)
 
     birthdate = models.StringField(label="Date of birth (mm/dd/yyyy)")
     
@@ -64,7 +64,7 @@ class Player(BasePlayer):
         print('values is', values)
         return 'A response has indicated that you are not paying attention. Please revisit the questions below.'
 
-    age = models.DecimalField(label='Age', min=18, max_digits=3, decimal_places=0)
+    age = models.FloatField(label='Age', min=18, max_digits=3, decimal_places=0)
 
     gender = models.StringField(
         choices=[['Male', 'Male'], ['Female', 'Female'],
