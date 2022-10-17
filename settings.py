@@ -21,33 +21,12 @@ SESSION_CONFIG_DEFAULTS = dict(
 
 SESSION_CONFIGS = [
     dict(
-        name='circle',
-        display_name="Circle",
-        num_demo_participants=4,
-        app_sequence=['survey','circle_understanding_b1','circle_block1','circle_understanding_b2','circle_block2','circle_understanding_b3','circle_block3','circle_understanding_b4','circle_block4','circle_understanding_b5','circle_block5','circle_understanding_b6','circle_block6','end'
-                      ],
-    ),
-    dict(
         name='complete',
         display_name="Complete",
         num_demo_participants=4,
         app_sequence=['survey','complete_understanding_b1','complete_block1','complete_understanding_b2','complete_block2','complete_understanding_b3','complete_block3','complete_understanding_b4','complete_block4','complete_understanding_b5','complete_block5','complete_understanding_b6','complete_block6','end'
-                      ],
-    ),
-    dict(
-        name='line',
-        display_name="Line",
-        num_demo_participants=4,
-        app_sequence=['survey','line_understanding_b1','line_block1','line_understanding_b2','line_block2','line_understanding_b3','line_block3','line_understanding_b4','line_block4','line_understanding_b5','line_block5','line_understanding_b6','line_block6','end'
-                      ],
-    ),
-    dict(
-        name='star',
-        display_name="Star",
-        num_demo_participants=4,
-        app_sequence=['survey','star_understanding_b1','star_block1','star_understanding_b2','star_block2','star_understanding_b3','star_block3','star_understanding_b4','star_block4','star_understanding_b5','star_block5','star_understanding_b6','star_block6','end'
-                      ],
-    ),
+                      ]
+	)
 ]
 
 # ISO-639 code
@@ -58,22 +37,12 @@ LANGUAGE_CODE = 'en'
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
-ROOMS = [
-    dict(
-        name='econ101',
-        display_name='Econ 101 class',
-        participant_label_file='_rooms/econ101.txt',
-    ),
-    dict(name='live_demo', display_name='Room for live demo (no participant labels)'),
-]
+
 
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
 ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD')
 
-DEMO_PAGE_INTRO_HTML = """
-Here are some oTree games.
-"""
 
 # don't share this with anybody.
 SECRET_KEY = '{{ secret_key }}'
